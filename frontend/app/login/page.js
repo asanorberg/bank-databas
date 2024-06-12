@@ -22,7 +22,7 @@ function Login() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ username, password }), // Send only username and password
+        body: JSON.stringify({ username, password }),
       });
 
       if (response.ok) {

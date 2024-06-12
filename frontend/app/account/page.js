@@ -16,7 +16,7 @@ const AccountPage = () => {
     console.log("fetch initiated");
     try {
       const otp = localStorage.getItem("otp");
-      console.log("Retrieved OTP from localStorage:", otp); // Log the OTP for debugging
+      console.log("Retrieved OTP from localStorage:", otp);
       if (!otp) {
         console.log("No OTP found in local storage");
         return;
@@ -26,7 +26,7 @@ const AccountPage = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${otp}`, // Set the OTP in the Authorization header
+          Authorization: `Bearer ${otp}`,
         },
       });
 
@@ -66,7 +66,7 @@ const AccountPage = () => {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Authorization: `Bearer ${localStorage.getItem("otp")}`, // Ensure Authorization header is set here too
+              Authorization: `Bearer ${localStorage.getItem("otp")}`,
             },
             body: JSON.stringify({
               depositAmount: parseFloat(depositAmount),
