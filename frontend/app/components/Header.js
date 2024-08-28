@@ -20,13 +20,13 @@ export default function Header() {
     // <-------- Nav menu -------->
     <header className="flex items-center justify-between p-8">
       <div className="hidden sm:flex">
-        <Link className="text-blue-600 text-2xl p-4 no-underline" href="/">
+        <Link className="text-red-600 text-2xl p-4 no-underline" href="/">
           {" "}
           Money bank
         </Link>
       </div>
       <div className="sm:hidden block">
-        <Link className="text-blue-600 text-2xl p-4 no-underline" href="/">
+        <Link className="text-red-600 text-2xl p-4 no-underline" href="/">
           {" "}
           MB
         </Link>
